@@ -1,2 +1,2 @@
 # review-commenting-system
-The Users Can Review , edit , delete the comments and Connect with other active users.  
+The users can review , edit , delete their own comments and Connect with other active users.  
