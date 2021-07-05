@@ -1,0 +1,48 @@
+body{
+        text-align: center;        
+}
+
+ul{
+        list-style-type: none;
+}
+/* .twocol{
+        float: left;
+        width: 50%;
+} */
+#firstline{
+        margin-bottom: 70px;
+}
+h1{
+        font-family: cursive;
+        color: indianred;
+}
+h5{
+        font-family: monospace;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;            
+}
+#message{
+        color: violet;
+        font-weight: bold;
+}
+#h5span{
+        background-color: rgb(139, 223, 238);
+        
+        padding:10px;
+        margin-left: 10px;
+        border-left: 5px solid rgb(40, 214, 245) ;
+}
+/* #secondcol{
+ display: flex;  
+ padding-left: 75px;     
+} */
+button{
+        color:white ;
+        background-color:violet ;
+        border-radius: 2px;
+        border: 3px;
+}
+/* #availUsers{
+        margin-top: 10px;
+        margin-right: 300px;
+}  */
