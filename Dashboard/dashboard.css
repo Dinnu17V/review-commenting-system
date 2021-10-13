@@ -1,20 +1,18 @@
-body{
-        text-align: center;        
+.fnt_size{
+        font-size: 15px;
 }
-
 ul{
         list-style-type: none;
 }
-/* .twocol{
-        float: left;
-        width: 50%;
-} */
-#firstline{
-        margin-bottom: 70px;
+.mt-n1 {
+        margin-top: 1.5rem !important;
 }
-h1{
+#firstline{
+        font-style: italic;
+        color: blueviolet;
+        text-align: center;
         font-family: cursive;
-        color: indianred;
+        font-size: 60px;
 }
 h5{
         font-family: monospace;
@@ -32,17 +30,28 @@ h5{
         margin-left: 10px;
         border-left: 5px solid rgb(40, 214, 245) ;
 }
-/* #secondcol{
- display: flex;  
- padding-left: 75px;     
-} */
+
 button{
         color:white ;
         background-color:violet ;
-        border-radius: 2px;
-        border: 3px;
+        border-radius: 10px;
+        border: 3px;       
 }
-/* #availUsers{
-        margin-top: 10px;
-        margin-right: 300px;
-}  */
+.lg{
+        text-align: center;
+        font-size: 25px; 
+}
+#availUsers,#MyRequests,#MyConnections{
+        /* margin-top: 10px;
+        margin-right: 300px; */
+        padding: 10px;
+}  
+/*
+ #secondcol{
+ display: flex;  
+ padding-left: 75px;     
+} 
+.twocol{
+        float: left;
+        width: 50%;
+} */

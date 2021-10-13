@@ -10,51 +10,74 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
-    <div id="firstline">
-        <h1>WELCOME ON COMMENTS BOX</h1>
+    <div id="firstline" class="mt-n1">
+        <p>WELCOME ON COMMENTS BOX</p>
     </div>
-    <div class="twocol">
+    <div class="container-fluid mt-n1">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="message" class="fnt_size">
 
-        <div id="message">
+                </div>
+                <div>
+                    <textarea name="msg" id="cmt" cols="30" rows="5" placeholder="Type Here"
+                        class="fnt_size"></textarea>
+                </div>
+                <button id="post" onclick="post()" class="fnt_size">POST</button>
+                <button id="saveb" onclick="Save()" class="fnt_size">Save</button>
+                </br></br>
+                <ul id="AllPosts" class="fnt_size"></ul>
+                </br></br>
+
+                </br></br></br>
+            </div>
+            <div class="col-md-3">
+                <div id="secondcol">
+                    <i class="fa fa-coffee" style="font-size:36px"></i>
+                    </br></br>
+                    <h5><i><span id="h5span" class="fnt_size">Available Users</span> </i></h5>
+                    <ul id="availUsers" class="fnt_size">
+                    </ul>
+                    </br>
+                    <h5><i><span id="h5span" class="fnt_size">My Requests</span> </i></h5>
+                    <ul id="MyRequests" class="fnt_size"></ul>
+                    </br>
+                    <h5><i><span id="h5span" class="fnt_size">My Connections</span> </i></h5>
+                    <ul id="MyConnections" class="fnt_size"></ul>
+
+                </div>
+                </br></br></br>
+            </div>
+            <div class="col-md-3 mt-n1">
+                <p id="message" class="fnt_size">Messages</p>
+                <textarea id="txt_a" rows="6" cols="30" class="fnt_size" placeholder="Type Message Here"></textarea>
+                </br>
+                <button id="snd" class="fnt_size">Send</button>
+                <ul id="msg_ul" class="fnt_size"></ul>
+            </div>
 
         </div>
-        <div>
-            <textarea name="msg" id="cmt" cols="30" rows="5" placeholder="Type Here"></textarea>
+        <div class=" lg">
+            <button onclick="Logout()">Logout</button>
         </div>
-        <button id="post" onclick="post()">POST</button>
-        <button id="saveb" onclick="Save()">Save</button>
-        </br></br>
-        <ul id="AllPosts"></ul>
-        </br></br>
-
-        </br></br></br>
-    </div>
-    <div class="twocol">
-        <div id="secondcol">
-            <i class="fa fa-coffee" style="font-size:36px"></i>
-            <h5><i><span id="h5span">Available Users</span> </i></h5>
-            <ul id="availUsers"></ul>
-            </br>
-            <h5><i><span id="h5span">My Requests</span> </i></h5>
-            <ul id="MyRequests"></ul>
-            </br>
-            <h5><i><span id="h5span">My Connections</span> </i></h5>
-            <ul id="MyConnections"></ul>
-        </div>
-
-
-        </br></br></br>
-    </div>
-    <br style="clear:left">
-    <div id="logout">
-        <button onclick="Logout()">Logout</button>
     </div>
 
     <script src="./dasboard.js"></script>
     <script src="../Utilities/Utilities.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+
+    <!-- <div class="twocol">
+    </div>
+    <div class="twocol">
+    </div> -->
+    <!-- <br style="clear:left"> -->
 </body>
 
 </html>
